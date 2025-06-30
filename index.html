@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <title>Ma première page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Bienvenue sur mon site !</h1>
-    <h2>&Agrave; propos de moi</h2>
-    <p>Ceci est ma première page en ligne.<br/>voici ce que j'aime:</p>
-    <ul>
-      <li><h3>Mes langages préféres:</h3></li>
-      <ul>
-        <li>Bash</li>
-        <li>Python</li>
-        <li>Ecmascript 262</li>
-      </ul>
-      <li><h3>Mes films préférés</h3></li>
-      <ul>
-        <li>"Il était une fois la révolution"</li>
-        <li>"C'est arrivé près de chez vous"</li>
-        <li>"Bernie"</li>
-      </ul>
-    </ul>
-    <h3>Ma routine pour me rendre à mon boulot</h3>
-    <div class="tenor-gif-embed" data-postid="15143582" data-share-method="host" data-aspect-ratio="1.83908" data-width="100%"><a href="https://tenor.com/view/jean-claude-van-damme-split-volvo-trucks-gif-15143582">Jean Claude Van Damme Split GIF</a></div>
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-    <h4>un lien vers un site que j'aime</h4>
-    <p><a href="https://www.it-connect.fr/">It-Connect.fr</a></p>
+    <h1>Formulaire de contact</h1>
+    <form action="form.php" method="POST">
+      <label>Prénom :</label><br />
+      <input type="text" name="prenom" required /><br /><br />
+      <label>Nom :</label><br />
+      <input type="text" name="nom" required /><br /><br />
+      <label>Email :</label><br />
+      <input type="email" name="email" required /><br /><br />
+      <label>Message :</label><br />
+      <textarea name="message"></textarea><br /><br />
+      <button type="submit">Envoyer</button>
+    </form>
   </body>
-</html
+</html>
